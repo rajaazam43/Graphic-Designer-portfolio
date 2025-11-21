@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio | Showcasing Packaging, UI, and Branding</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            color: #f0f6fc; /* Light text */
+        }
+        .portfolio-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-[#161b22]/95 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-teal-400">Design Studio</h1>
+            <div class="space-x-4">
+                <a href="#portfolio" class="text-gray-300 hover:text-teal-400 transition duration-150 rounded-lg p-2">Work</a>
+                <a href="#about" class="text-gray-300 hover:text-teal-400 transition duration-150 rounded-lg p-2">About</a>
+                <a href="#contact" class="text-gray-300 hover:text-teal-400 transition duration-150 rounded-lg p-2">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-xl text-gray-400 mb-4">Hello! I am a Graphic Designer specializing in</p>
+            <h2 class="text-5xl sm:text-7xl font-extrabold tracking-tight mb-6">
+                <span class="text-teal-400">Branding,</span> Packaging & <span class="text-teal-400">UI Design.</span>
+            </h2>
+            <p class="text-lg text-gray-300 mb-8">
+                Turning ideas into visually compelling realities. Explore my diverse collection of projects, from corporate branding to product packaging and digital interfaces.
+            </p>
+            <a href="#portfolio" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-xl shadow-teal-500/30">
+                View Latest Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h3 class="text-4xl font-bold mb-12 text-center text-gray-200">Selected Works</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- 1. Packaging Box Design -->
+            <div class="portfolio-item bg-[#161b22] rounded-xl overflow-hidden cursor-pointer hover:border-teal-500 border border-transparent">
+                <!-- START IMAGE REPLACEMENT: Replace the URL inside src="..." with your actual image URL or local path (e.g., 'images/packaging.jpg') -->
+                <img src="https://placehold.co/600x450/1f2937/a1a1aa?text=Packaging+Design" alt="3D Mockup of Custom Packaging Box" class="w-full h-64 object-cover">
+                <!-- END IMAGE REPLACEMENT -->
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2 text-teal-300">Sustainable Box Design</h4>
+                    <p class="text-gray-400 text-sm">Category: Packaging & Product Mockups</p>
+                    <p class="mt-3 text-gray-300">Concept packaging for a premium coffee subscription, focusing on eco-friendly materials and minimalist aesthetics.</p>
+                </div>
+            </div>
+
+            <!-- 2. UI Design (App/Web) -->
+            <div class="portfolio-item bg-[#161b22] rounded-xl overflow-hidden cursor-pointer hover:border-teal-500 border border-transparent">
+                <!-- START IMAGE REPLACEMENT: Replace the URL inside src="..." with your actual image URL or local path (e.g., 'images/ui_design.png') -->
+                <img src="https://placehold.co/600x450/1f2937/a1a1aa?text=Mobile+App+UI+Design" alt="Mobile App UI/UX Mockup" class="w-full h-64 object-cover">
+                <!-- END IMAGE REPLACEMENT -->
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2 text-teal-300">FinTech Mobile Interface</h4>
+                    <p class="text-gray-400 text-sm">Category: UI/UX Design</p>
+                    <p class="mt-3 text-gray-300">A clean, data-driven user interface for a wealth management application, optimized for dark mode.</p>
+                </div>
+            </div>
+
+            <!-- 3. Labels and Branding -->
+            <div class="portfolio-item bg-[#161b22] rounded-xl overflow-hidden cursor-pointer hover:border-teal-500 border border-transparent">
+                <!-- START IMAGE REPLACEMENT: Replace the URL inside src="..." with your actual image URL or local path (e.g., 'images/label_set.jpg') -->
+                <img src="https://placehold.co/600x450/1f2937/a1a1aa?text=Product+Label+Design" alt="Luxury Cosmetic Label Design" class="w-full h-64 object-cover">
+                <!-- END IMAGE REPLACEMENT -->
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2 text-teal-300">Artisanal Soap Label Set</h4>
+                    <p class="text-gray-400 text-sm">Category: Labels & Brand Identity</p>
+                    <p class="mt-3 text-gray-300">Illustrative label design for a line of organic bath products, conveying natural and premium quality.</p>
+                </div>
+            </div>
+
+            <!-- 4. Flyers and Banners -->
+            <div class="portfolio-item bg-[#161b22] rounded-xl overflow-hidden cursor-pointer hover:border-teal-500 border border-transparent">
+                <!-- START IMAGE REPLACEMENT: Replace the URL inside src="..." with your actual image URL or local path (e.g., 'images/marketing_banner.png') -->
+                <img src="https://placehold.co/600x450/1f2937/a1a1aa?text=Event+Flyer+and+Banner" alt="Digital Banner and Print Flyer Mockup" class="w-full h-64 object-cover">
+                <!-- END IMAGE REPLACEMENT -->
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2 text-teal-300">Tech Conference Marketing</h4>
+                    <p class="text-gray-400 text-sm">Category: Digital & Print Ads (Banners/Flyers)</p>
+                    <p class="mt-3 text-gray-300">Coordinated design of digital banner ads and a printable flyer for a major industry event.</p>
+                </div>
+            </div>
+
+            <!-- 5. Business Cards -->
+            <div class="portfolio-item bg-[#161b22] rounded-xl overflow-hidden cursor-pointer hover:border-teal-500 border border-transparent">
+                <!-- START IMAGE REPLACEMENT: Replace the URL inside src="..." with your actual image URL or local path (e.g., 'images/biz_card.jpg') -->
+                <img src="https://placehold.co/600x450/1f2937/a1a1aa?text=Luxury+Business+Card+Mockup" alt="Modern Business Card Design" class="w-full h-64 object-cover">
+                <!-- END IMAGE REPLACEMENT -->
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2 text-teal-300">Minimalist Business Card</h4>
+                    <p class="text-gray-400 text-sm">Category: Stationery & Business Cards</p>
+                    <p class="mt-3 text-gray-300">Two-sided professional business card design with spot UV finishes and strong typographic hierarchy.</p>
+                </div>
+            </div>
+
+            <!-- 6. General Branding/Logo (Bonus Category) -->
+            <div class="portfolio-item bg-[#161b22] rounded-xl overflow-hidden cursor-pointer hover:border-teal-500 border border-transparent">
+                <!-- START IMAGE REPLACEMENT: Replace the URL inside src="..." with your actual image URL or local path (e.g., 'images/branding.png') -->
+                <img src="https://placehold.co/600x450/1f2937/a1a1aa?text=Logo+and+Brand+Identity" alt="Corporate Brand Guideline Mockup" class="w-full h-64 object-cover">
+                <!-- END IMAGE REPLACEMENT -->
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2 text-teal-300">Corporate Rebrand Identity</h4>
+                    <p class="text-gray-400 text-sm">Category: Logo & Brand Guidelines</p>
+                    <p class="mt-3 text-gray-300">Full brand identity system, including color palettes, typography, and logo usage rules.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="mt-12 text-center">
+            <button onclick="window.location.href='#contact'" class="bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                Discuss a New Project
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-4xl font-bold mb-6 text-center text-gray-200">About Me</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <!-- Profile Image Area -->
+                <div class="flex-shrink-0 w-32 h-32 rounded-full overflow-hidden border-4 border-teal-500">
+                    <!-- 
+                        *** IMPORTANT: GOOGLE DRIVE TROUBLESHOOTING ***
+                        If the image is not displaying, you MUST confirm the following:
+                        1. Go to the image file in Google Drive.
+                        2. Click 'Share' and ensure the setting is 'Anyone with the link' (not 'Restricted').
+                        3. Click 'Copy link' and paste it somewhere. The File ID (1CeNpq3NWb0MovVg0J917hXGqs5Bh7SkC) is correct, but the permission may be lagging.
+                        
+                        The direct URL currently being used is:
+                    -->
+                    <img src=azam-profile" alt="Your Profile Picture" class="w-full h-full object-cover">
+                    <!-- END IMAGE REPLACEMENT -->
+                </div>
+                
+                <div class="text-lg text-gray-300">
+                    <p class="mb-4">
+                        I am a dedicated graphic designer with over five years of experience in crafting impactful visual solutions across various media. My expertise lies in blending creative concepts with strategic marketing goals.
+                    </p>
+                    <p class="mb-4">
+                        I thrive on projects that challenge me to think outside the box, whether it’s designing functional and beautiful user interfaces, creating memorable product packaging that stands out on the shelf, or developing consistent and professional brand stationery like business cards and flyers.
+                    </p>
+                    <p class="text-teal-400 font-medium">
+                        Let's collaborate to bring your next big idea to life with sharp, effective design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-800">
+        <div class="max-w-2xl mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-4 text-gray-200">Get in Touch</h3>
+            <p class="text-xl text-gray-400 mb-8">Ready to start a project? Send a quick message!</p>
+            
+            <!-- 
+                *** ACTION REQUIRED TO RECEIVE MESSAGES ***
+                1. Change the 'action' attribute URL below.
+                2. Replace 'your-real-email@example.com' with the email address where you want to receive the contact form submissions.
+                3. The first time someone submits the form on your live website, FormSubmit will send a confirmation link to your email. You must click that link to activate the form.
+            -->
+            <form action="https://formsubmit.co/rajaazam43@gmail.com" method="POST" class="space-y-6 bg-[#161b22] p-8 rounded-xl shadow-2xl">
+                <div>
+                    <!-- The 'name' attribute is crucial for form submission -->
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required 
+                           class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-teal-500 focus:border-teal-500 text-white placeholder-gray-400">
+                </div>
+                <div>
+                    <input type="email" id="email" name="Email" placeholder="Your Email" required 
+                           class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-teal-500 focus:border-teal-500 text-white placeholder-gray-400">
+                </div>
+                <div>
+                    <textarea id="message" name="Message" rows="4" placeholder="How can I help you with your design project?" required 
+                              class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-teal-500 focus:border-teal-500 text-white placeholder-gray-400"></textarea>
+                </div>
+                <!-- Hidden fields for better experience (FormSubmit feature) -->
+                <input type="hidden" name="_subject" value="New Portfolio Inquiry!">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html"> <!-- Redirect after submit (optional) -->
+                
+                <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                    Send Message
+                </button>
+                <p id="form-message" class="text-sm pt-2 text-center h-4"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#161b22] py-8 mt-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 mb-4">&copy; 2024 Design Studio Portfolio. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <!-- Social Icons Placeholder - Using Emojis as simple icons -->
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition duration-300" aria-label="LinkedIn">🔗</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition duration-300" aria-label="Instagram">📸</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition duration-300" aria-label="Behance">💡</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // NOTE: The previous JavaScript contact form handler has been removed
+        // because FormSubmit handles the submission and success message/redirect externally.
+        // If you want a custom success message without redirecting, you would need a more advanced setup.
+    </script>
+</body>
+</html>
